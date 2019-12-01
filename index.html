@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		::-webkit-scrollbar {
+			width: 0;
+		}
+		.section{
+			text-align: center;
+			padding: 50px 80px;
+			line-height: 1.8em;
+		}
+		.light{
+			background-color: #f4f4f4;
+			color: #777;
+		}
+		.dark{
+			background-color: #282e34;
+			color: #ddd;
+		}
+		.parallax1{
+			background: url(images/01.jpeg);
+			min-height: 100vh; 
+		}
+		.parallax2{
+			background: url(images/03.jpeg);
+			min-height: 400px; 
+		}
+		.parallax3{
+			background: url(images/04.jpeg);
+			min-height: 400px; 
+		}
+		.parallax1, .parallax2, .parallax3{
+			position: relative;
+			opacity: 0.7;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.paratext{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			color: #000;
+			font-size: 17px;
+			letter-spacing: 8px;
+			text-transform: uppercase;
+		}
+		.bgtext{
+			background-color: #111;
+			color: #777;
+			padding: 20px;
+		}
+		.transparent{
+			background-color: transparent;
+		}
+	</style>
+</head>
+<body>	
+	<div class="parallax1">
+		<div class="paratext">
+			<span class="bgtext">Parallax Website</span>
+		</div>
+	</div>
+	<section class="section light">
+		<h2>Section One</h2>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+	</section>
+	<div class="parallax2">
+		<div class="paratext">
+			<span class="bgtext transparent">First Image</span>
+		</div>
+	</div>
+	<section class="section dark">
+		<h2>Section Two</h2>
+		<p>
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+		</p>
+	</section>
+	<div class="parallax3">
+		<div class="paratext">
+			<span class="bgtext transparent">Second Image</span>
+		</div>
+	</div>
+	<section class="section dark">
+		<h2>Section Three</h2>
+		<p>
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>
+	</section>
+</body>
+</html>
